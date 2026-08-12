@@ -6,7 +6,7 @@ A GPU-accelerated all-pairs N-body gravity simulation, built in CUDA C++ and vis
 
 The all-pairs force calculation and shared-memory tiling structure are based on the approach described in **[GPU Gems 3, Chapter 31: Fast N-Body Simulation with CUDA](https://developer.nvidia.com/gpugems/gpugems3/part-v-physics-simulation/chapter-31-fast-n-body-simulation-cuda)** (Nyland, Harris, Prins). The chapter's derivation of the softened gravitational force equation and its tile-based shared-memory strategy were used as the conceptual reference.
 
-The code itself is my own independent implementation, not a copy of the chapter's example code. Design choices - including the `Body` struct layout, the accumulate-locally-then-write-once optimization, the explicit self-interaction guard, and the full integration/visualization pipeline — were built and reasoned through from scratch, following the chapter's algorithmic approach rather than its exact code.
+The code itself is my own independent implementation, not a copy of the chapter's example code. 
 
 ## What it does
 
